@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/logosegundacasa.png" type="./img/logosegundacasa.png">
+    <title>Segunda Casa</title>
+    <link rel="stylesheet" href="index.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Doação</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #457b9d;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        
+        .container {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 400px;
+            text-align: center;
+        }
+        
+        .container h1 {
+            margin-bottom: 20px;
+        }
+        
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+        
+        input[type="text"],
+        input[type="email"],
+        input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #265572;
+            border-radius: 4px;
+            margin-bottom: 15px;
+        }
+        
+        input[type="number"] {
+            width: 80%;
+        }
+        
+        input[type="submit"] {
+            background-color: #008000;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>Formulário de Doação de Dinheiro</h1>
+        <form action="processar_doacao.php" method="POST">
+            <label for="nome">Nome Completo:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="valor">Valor da Doação (R$):</label>
+            <input type="number" id="valor" name="valor" min="1" step="0.01" required>
+
+            <input type="submit" value="Doar">
+        </form>
+    </div>
+    <div id="menu">
+        <div class="scrollable-content">
+            <div class="segundacasa">
+                <div class="logo_content">
+                    <div class="logo">
+                        <img src="./img/logosegundacasa.png">
+                        <div class="logo_name">Segunda Casa</div>
+                    </div>
+                    <li>
+                        <a href="index.html" target="_black">
+                            <i class='bx bx-menu' id="btn"></i>
+                            <span class="links_name">Inicio</span>
+                        </a>
+                        <span class="tooltip">o</span>
+                    </li>
+
+                </div>
+                <ul class="nav-list">
+                    <li>
+                        <a href="doe.html" target="_black">
+                            <i class='bx bx-donate-heart'></i>
+                            <span class="links_name">Doe</span>
+                        </a>
+                        <span class="tooltip">Doe</span>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/associacao_segundacasa/" target="_black">
+                            <i class='bx bxl-instagram'></i>
+                            <span class="links_name">Instagram</span>
+                        </a>
+                        <span class="tooltip">Instragram</span>
+                    </li>
+                    <li>
+                        <a href="https://www.tiktok.com/@segundacasa_?lang=pt-BR" target="_black">
+                            <i class='bx bxl-tiktok'></i>
+                            <span class="links_name">TikTok</span>
+                        </a>
+                        <span class="tooltip">Tiktok</span>
+                    </li>
+                    <li>
+                        <a href="https://api.whatsapp.com/send?phone=5541996425946&text=Gostaria%20de%20contribuir%20com%20o%20projeto%F0%9F%98%8A." target="_black">
+                            <i class='bx bxl-whatsapp'></i>
+                            <span class="links_name">WhatsApp</span>
+                        </a>
+                        <span class="tooltip">WhatsApp</span>
+                    </li>
+                    <li>
+                        <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSDZqbVFwWWNRkDDQzVfTKnVTzvZjKnQSzqZPHqMtZKPnvXHWmpXHQSrhlvcHZHhRpLxcRJH" target="_black">
+                            <i class='bx bxl-gmail'></i>
+                            <span class="links_name">Gmail</span>
+                        </a>
+                        <span class="tooltip">Gmail</span>
+                    </li>
+            </div>
+
+        </div>
+
+</body>
